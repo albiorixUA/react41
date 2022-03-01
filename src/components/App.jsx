@@ -1,17 +1,12 @@
+import { PageTitle } from 'components/PageTitle/PageTitle';
+import { EventBoard } from 'components/EventBoard/EventBoard';
+import upcommongEvents from 'upcoming-events.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <PageTitle text="24th Core Worlds Coalition Conference" />
+      <EventBoard events={upcommongEvents} />
+    </>
   );
 };
